@@ -1,5 +1,4 @@
 # GoogleAnalyticsLib
-# 一个Google数据分析库
 
 Usage
 
@@ -18,7 +17,7 @@ dependencies {
 }
 
 - Step 3. Add google gms lib in build.gradle of app  and sync project
-   //gms库
+   //gms
    implementation 'com.google.android.gms:play-services-analytics:15.0.0'
 
 - Step 4. add you trackingId in AndroidManifest.xml
@@ -46,10 +45,10 @@ dependencies {
 
 https://developers.google.com/analytics/devguides/collection/android/v4/?hl=zh-cn
 
-## Focus on developers
+## Focus on developer
 
-- 邮箱： victor423099@gmail.com
-- 新浪微博
+- E-mail: victor423099@gmail.com
+- Sina Weibo
 - ![image](https://github.com/Victor2018/AppUpdateLib/raw/master/SrceenShot/sina_weibo.jpg)
 
 ## License
