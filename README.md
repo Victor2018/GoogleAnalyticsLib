@@ -18,22 +18,36 @@ dependencies {
 }
 
 - Step 3. Add google gms lib in build.gradle of app  and sync project
- //gms库
-implementation 'com.google.android.gms:play-services-analytics:15.0.0'
+   //gms库
+   implementation 'com.google.android.gms:play-services-analytics:15.0.0'
 
 - Step 4. add you trackingId in AndroidManifest.xml
-<meta-data android:name="GA_TRACKING_ID" android:value="${YOUR_TRACKING_ID}"/>
+
+  <meta-data android:name="GA_TRACKING_ID" android:value="${YOUR_TRACKING_ID}"/>
+
 - Step 5. AnalyticsHelper.getInstance().init(this);
+
 - Step 6. you can send customAction or screenName by this:
- AnalyticsHelper.getInstance().sendCustomAction(category,action,lable,value);
- AnalyticsHelper.getInstance().sendScreenName(screenName);
+
+   AnalyticsHelper.getInstance().sendCustomAction(category,action,lable,value);
+   AnalyticsHelper.getInstance().sendScreenName(screenName);
 
 - Step 7. you can see the analytics datas by this url:
-https://analytics.google.com/analytics/web/?hl=zh&authuser=0#/report-home/a125179676w183709909p181191671
-![image](https://github.com/Victor2018/GoogleAnalyticsLib/raw/master/SrceenShot/custom_action.png)
-![image](https://github.com/Victor2018/GoogleAnalyticsLib/raw/master/SrceenShot/screen_name.png)
 
-# 关注开发者：
+  https://analytics.google.com/analytics/web/?hl=zh&authuser=0#/report-home/a125179676w183709909p181191671
+
+  ![image](https://github.com/Victor2018/GoogleAnalyticsLib/raw/master/SrceenShot/custom_action.png)
+
+  ![image](https://github.com/Victor2018/GoogleAnalyticsLib/raw/master/SrceenShot/screen_name.png)
+
+
+
+## Reference material ：
+
+https://developers.google.com/analytics/devguides/collection/android/v4/?hl=zh-cn
+
+## Focus on developers
+
 - 邮箱： victor423099@gmail.com
 - 新浪微博
 - ![image](https://github.com/Victor2018/AppUpdateLib/raw/master/SrceenShot/sina_weibo.jpg)
