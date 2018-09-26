@@ -37,4 +37,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        AnalyticsHelper.getInstance().onDestroy();
+    }
 }

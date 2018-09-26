@@ -73,6 +73,18 @@ public class AnalyticsHelper {
         mTracker.send(new HitBuilders.ScreenViewBuilder().build());
     }
 
+    public synchronized void onDestroy () {
+        if (mTracker != null) {
+            mTracker = null;
+        }
+        if (googleAnalytics != null) {
+            googleAnalytics = null;
+        }
+        if (mAnalyticsHelper != null) {
+            mAnalyticsHelper = null;
+        }
+    }
+
     private String getTrackerId () {
         String trackerId = null;
         if (mContext == null) return trackerId;
